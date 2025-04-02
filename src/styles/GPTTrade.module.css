@@ -1,0 +1,214 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  padding: 100px;
+  background: linear-gradient(to bottom, black 50%, transparent 100%),
+    url("/image/background.png");
+  background-size: 100% 70%, auto 100%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+
+.adventeges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7fr 5fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.adventegesComponent:nth-child(1) {
+  grid-row: span 7;
+}
+
+.adventegesComponent:nth-child(2) {
+  grid-row: span 5;
+}
+
+.adventegesComponent:nth-child(3) {
+  grid-row: span 7;
+}
+
+.adventegesComponent:nth-child(4) {
+  grid-row: span 5;
+}
+
+.adventegesComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+  background-color: rgba(27, 27, 27, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adventegesComponent h3 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.adventegesComponent p {
+  color: #666;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #666;
+}
+
+.adventegesComponent img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.profit {
+  margin-top: 50px;
+}
+
+.profit h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.poweredBy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.poweredBy p {
+  color: white;
+}
+
+.poweredBy img {
+  width: auto;
+  height: 1.1rem;
+}
+
+.profit {
+  position: relative;
+}
+
+.profit p {
+  color: rgb(175, 175, 175);
+  font-size: 1.2rem;
+}
+
+.profit button {
+  max-height: 50px;
+  min-width: 100px;
+  background-color: #fd3736;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.1s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    -2px -2px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(253, 55, 54, 0.2);
+  z-index: 2;
+}
+
+.profit button:hover {
+  transform: scale(1.05);
+  background-color: #ff4c4c;
+}
+
+.profit .profitButtonContainer img {
+  position: absolute;
+  right: -30%;
+  bottom: 0;
+  height: 60%;
+  width: auto;
+  padding-right: 20px;
+  z-index: 1;
+}
+
+.tradeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tradeImg img {
+  height: 70%;
+  width: auto;
+}
+
+.howWork {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.howWork h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.howWork p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    gap: 50px;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 0px;
+  }
+
+  .profit {
+    order: 1;
+    padding-bottom: 250px;
+  }
+
+  .profit .profitButtonContainer img {
+    height: 40%;
+  }
+
+  .adventeges {
+    order: 2;
+  }
+
+  .adventegesComponent {
+    padding: 40px 15px;
+  }
+
+  .adventegesComponent h3 {
+    font-size: 14px;
+  }
+
+  .adventegesComponent p {
+    font-size: 12px;
+  }
+
+  .tradeImg {
+    order: 3;
+    padding: 100px 0px;
+  }
+
+  .howWork {
+    padding: 0px;
+    order: 4;
+  }
+}

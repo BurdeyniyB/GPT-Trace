@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary-color: #f0f0f0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  position: relative;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .crypto-component {
+    display: none;
+  }
+
+  .company-component {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company-component {
+    display: none;
+  }
+
+  .cryto-component {
+    display: block;
+  }
+}

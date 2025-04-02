@@ -1,0 +1,70 @@
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.cryptoTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cryptoTable th,
+  .cryptoTable td {
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid #c9c9c9;
+  }
+  
+  .cryptoTable th {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .cryptoTable td {
+    background-color: inherit;  
+  }
+  
+  .cryptoTable tr:nth-child(even) {
+    background-color: #ffffff;  
+    color: #000000;  
+  }
+  
+  .cryptoTable tr:nth-child(odd) {
+    background-color: #000000; 
+    color: #ffffff;  
+  }
+  
+  .coinData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .coinImage {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .profit{
+    color: #00D0FF;
+  }
+  
+  .buyButton {
+    background: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .buyButton:hover {
+    color: rgb(138, 138, 138);
+  }
+  

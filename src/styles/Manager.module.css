@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 100vh;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 60%;
+  margin: 50px 0px;
+}
+
+.form h1 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.form h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.form p {
+  color: #000000;
+  font-size: 1rem;
+  padding: 0px 15%;
+  margin-bottom: 20px;
+}
+
+.form p span {
+  color: #000000;
+  font-weight: 900;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.form label {
+  color: #000000;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #131313;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form button {
+  margin-top: 20px;
+  max-width: 350px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fd3736;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    -2px -2px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(253, 55, 54, 0.2);
+  transition: 0.3s;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+  background-color: #ff4c4c;
+}
+
+.form button:hover {
+  font-weight: 900;
+  background-color: #fd3736;
+}
+
+.container img {
+  position: absolute;
+  bottom: 0; 
+  left: 80%;
+  transform: translateX(-50%); 
+  height: 105%;
+  object-fit: contain; 
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container img{
+    max-width: 100%;
+  }
+
+  .form {
+    max-width: 80%;
+    padding-left: 0px;
+    margin: 50px 0px;
+    margin-bottom: 500px;
+    padding: 0;
+  }
+
+  .form form {
+    width: 100%;
+  }
+
+  .form p{
+    padding: 0 5%;
+  }
+
+  .form input {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+
+  .container img {
+    left: 50%;
+    height: 30%;
+  }
+}

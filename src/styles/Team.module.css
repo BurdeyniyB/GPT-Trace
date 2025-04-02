@@ -1,0 +1,132 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  color: black;
+  padding: 100px 0px;
+}
+
+.mainContainer h3 {
+  font-size: 18;
+  font-weight: 900;
+}
+
+.mainContainer .title {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 70%;
+}
+
+.mainContainer .title h2 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.mainContainer .title p {
+  font-size: 12px;
+  color: rgb(168, 168, 168);
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 80px 20px;
+}
+
+.teamMember {
+  position: relative;
+  text-align: center;
+}
+
+.teamMember img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.teamMemberOverlay {
+  position: absolute;
+  bottom: -10px;
+  right: -10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.teamMemberOverlay h3 {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.teamMemberOverlay p {
+  font-size: 0.5rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.prideContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin: 40px 0px;
+}
+
+.prideItem {
+  text-align: center;
+}
+
+.prideItem span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4c4c;
+  display: block;
+}
+
+.prideItem p {
+  font-size: 1rem;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.getStartedButton {
+  margin-top: 20px;
+  max-width: 200px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fd3736;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    -2px -2px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(253, 55, 54, 0.2);
+  transition: 0.3s;
+}
+
+.getStartedButton:hover {
+  transform: scale(1.05);
+  background-color: #ff4c4c;
+}
+
+.getStartedButton:hover {
+  background-color: #ff4c4c;
+}
+
+@media screen and (max-width: 950px) {
+  .teamContainer {
+    flex-direction: column;
+  }
+
+  .prideContainer {
+    flex-direction: column;
+  }
+}
