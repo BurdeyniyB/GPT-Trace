@@ -24,8 +24,6 @@ export default function Home() {
             body: JSON.stringify(formData),
         });
 
-        const result = await response.json();
-
         if (response.ok) {
             setFormData({ firstName: "", lastName: "", email: "", phone: "" });
         }

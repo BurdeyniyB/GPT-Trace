@@ -11,7 +11,7 @@ export default function GPTTrade() {
                 <div className={style.adventegesComponent}>
                     <img src="/image/TrustedAlgorithms.png" alt="Trusted Algorithms" />
                     <h3>Trusted Algorithms</h3>
-                    <p>Elon Musk's Al used in GPT Trade is a trusted word wide known Al with ultra-high performance</p>
+                    <p>Elon Musk&apos;s Al used in GPT Trade is a trusted word wide known Al with ultra-high performance</p>
                 </div>
                 <div className={style.adventegesComponent}>
                     <img src="/image/HyperSafety.png" alt="Hyper Safety" />
